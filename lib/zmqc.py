@@ -225,7 +225,7 @@ def get_sockopts(sock_opts):
     try:
         import zmq.sugar as optslib
     except:
-        import zmq.core.constants as optslib
+        import zmq.constants as optslib
 
     option_coerce = {
         int: set(optslib.int_sockopts).union(
